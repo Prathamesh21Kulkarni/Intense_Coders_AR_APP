@@ -1,0 +1,44 @@
+{
+  materials: [
+    {
+      name: 'papiermache_brain',
+      parameters: [
+        {
+          baseColor: null,
+        },
+        {
+          baseColorTint: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'Color',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/papiermache_brain.obj',
+    name: 'papiermache_brain',
+    recenter: 'root',
+    scale: 0.090001,
+  },
+  version: '0.52:1',
+}

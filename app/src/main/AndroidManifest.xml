@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.augmentedreality">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.Camera.ar"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ar_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ar_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".engine"></activity>
+        <activity android:name=".battery" />
+        <activity android:name=".Satelite" />
+        <activity android:name=".bot_drone" />
+        <activity android:name=".AssemblyMachine" />
+        <activity android:name=".human_brain" />
+        <activity android:name=".drillbit" />
+        <activity android:name=".heart" />
+        <activity android:name=".robotic_arm" />
+        <activity android:name=".hills" />
+        <activity android:name=".wolf" />
+        <activity android:name=".homescreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
+    </application>
+
+</manifest>

@@ -1,0 +1,43 @@
+{
+  materials: [
+    {
+      name: 'Wolves_Mat',
+      parameters: [
+        {
+          baseColor: null,
+        },
+        {
+          baseColorTint: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/Wolves.obj',
+    name: 'Wolves',
+    recenter: 'root',
+    scale: 0.050001,
+  },
+  version: '0.54:2',
+}

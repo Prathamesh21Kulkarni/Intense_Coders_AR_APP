@@ -1,0 +1,107 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.ar.sceneform.plugin'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId "com.example.augmentedreality"
+        minSdkVersion 24
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation "com.google.ar.sceneform.ux:sceneform-ux:1.5.1"
+    implementation 'androidx.cardview:cardview:1.0.0'
+}
+
+
+sceneform.asset('sampledata/human.OBJ',
+        'default',
+        'sampledata/human.sfa',
+        'src/main/assets/human')
+
+sceneform.asset('sampledata/mountain.obj',
+        'default',
+        'sampledata/mountain.sfa',
+        'src/main/assets/mountain')
+
+sceneform.asset('sampledata/Wolves.obj',
+        'default',
+        'sampledata/Wolves.sfa',
+        'src/main/assets/Wolves')
+
+
+sceneform.asset('sampledata/model.obj',
+        'default',
+        'sampledata/model.sfa',
+        'src/main/assets/model')
+
+
+sceneform.asset('sampledata/Heart_.obj',
+        'default',
+        'sampledata/Heart_.sfa',
+        'src/main/assets/Heart_')
+
+
+sceneform.asset('sampledata/Drill bit.obj',
+        'default',
+        'sampledata/Drill bit.sfa',
+        'src/main/assets/Drill bit')
+
+
+sceneform.asset('sampledata/papiermache_brain.obj',
+        'default',
+        'sampledata/papiermache_brain.sfa',
+        'src/main/assets/papiermache_brain')
+
+
+sceneform.asset('sampledata/AssemblyZ.obj',
+        'default',
+        'sampledata/AssemblyZ.sfa',
+        'src/main/assets/AssemblyZ')
+
+
+sceneform.asset('sampledata/bot drone.obj',
+        'default',
+        'sampledata/bot drone.sfa',
+        'src/main/assets/bot drone')
+
+
+sceneform.asset('sampledata/Satelite.obj',
+        'default',
+        'sampledata/Satelite.sfa',
+        'src/main/assets/Satelite')
+
+
+sceneform.asset('sampledata/battery.obj',
+        'default',
+        'sampledata/battery.sfa',
+        'src/main/assets/battery')
+
+
+sceneform.asset('sampledata/engine.obj',
+        'default',
+        'sampledata/engine.sfa',
+        'src/main/assets/engine')
